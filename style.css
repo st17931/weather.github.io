@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Fruktur&display=swap');
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+body,html{
+    height:100%;
+    font-family: fruktur,sans-serif;
+}
+.bg{
+    background-image: url("image.jpg");
+    height:100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.mainContainer{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 15px;
+    color: aqua;
+}
+.time{
+    font-size: 100px;
+}
+#am-pm{
+    font-size: 30px;
+    
+}
+.dateDay{
+    font-size: 30px;
+}
+.otherSide{
+    text-align:end;
+}
+.location{
+    font-size:40px;
+}
+.moreDetails{
+    display: flex;
+    flex-direction: column;
+    background:black;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px;
+    border: 1px solid white;
+}
+.flex-items{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+.futureTelecast{
+    display:flex;
+    flex-direction: row;
+    position: fixed;
+    bottom: 0;
+    width:100%;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20px;
+    padding:25px;
+    color: white;
+    background: #3c3c44;
+    border-radius: 20px;
+}
+
+@media screen and (max-width:500px) {
+    .futureTelecast{
+        justify-content: start;
+        align-items: none;
+        overflow-y: scroll;
+        font-size: 10px;
+    }
+    .time{
+        font-size: 50px;
+    }
+    #am-pm{
+        font-size: 15px;
+        
+    }
+    .dateDay{
+        font-size: 15px;
+    }
+    .location{
+        font-size:20px;
+    }
+}
